@@ -5,9 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 /**
- * Created by evilnapsis on 3/29/16.
- * Modificado por Daniel Vargas para el curso intersemestral de PROTECO de Android 2017-2
- * Clase que implementa todo lo necesario para crear la base de datos.
+ * UNAM FI
+ * Agenda movil, para la materia de LDP
+ * Hecho por Vargas Castro Daniel y Chavez Delgado Jorge Luis
  */
 public class Database extends SQLiteOpenHelper {
     //Se crean constantes útiles para operar la BD
@@ -20,7 +20,7 @@ public class Database extends SQLiteOpenHelper {
     public static final String COLUMN_PHONE = "phonse";
 
     private static final String DATABASE_NAME = "contacts.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 4;
 
     //COnstante que contiene un string con la sentencia SQL para crear una BD
     private static final String DATABASE_CREATE = "create table "

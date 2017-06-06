@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -9,6 +11,11 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     tools:context=".NewActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,18 +24,18 @@
         android:text="Nuevo Contacto"
         android:textSize="30sp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regresar"
-        android:layout_gravity="right"
-        android:id="@+id/back2"/>
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name"
         android:hint="Nombre"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alias"
+        android:hint="Alias"/>
+
+
 
     <EditText
         android:layout_width="match_parent"
@@ -54,15 +61,53 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/phone"
-        android:hint="Teléfono"
+        android:hint="Teléfono casa"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneCel"
+        android:hint="Teléfono celular"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/phoneJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono trabajo"
+        android:inputType="phone" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fax"
+        android:hint="Fax"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otro"
+        android:hint="Otro"
         android:inputType="phone"/>
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        />
+
     <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:layout_gravity="right"
+        android:text="Regresar" />
+
+    <Button
+        android:id="@+id/add_element"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Agregar"
         android:layout_gravity="center_horizontal"
 
-        android:id="@+id/add_element" />
-
+        android:text="Agregar" />
 </LinearLayout>
+</ScrollView>

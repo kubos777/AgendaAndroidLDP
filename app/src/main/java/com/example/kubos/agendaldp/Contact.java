@@ -9,9 +9,9 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
- * Created by evilnapsis on 3/29/16.
- * Modificado por Daniel Vargas para el curso intersemestral de PROTECO de Android 2017-2
- * CLASE QUE SIMULA UNA TABLA DE LA BASE DE DATOS EN UNA CLASE CON SUS MÉTODOS PARA EL CRUD
+ * UNAM FI
+ * Agenda movil, para la materia de LDP
+ * Hecho por Vargas Castro Daniel y Chavez Delgado Jorge Luis
  */
 public class Contact {
     //Atributos modificables del elemento en la BD
@@ -21,14 +21,6 @@ public class Contact {
     public String address;
     public String email;
     public String phone;
-        //Tipos de telefonos, fax y otros
-        public String phone_cel;
-        public String phone_job;
-        public String fax;
-        public String otro;
-
-
-
     private SQLiteDatabase database; //Objeto útil para manipulación de tablas en la BD
     private Database dbHelper; //Objeto de clase creada por nosotros para manipulación de la BD
     //Arreglo de cadenas que almacena toda una fila de una tabla (datos de un contacto)

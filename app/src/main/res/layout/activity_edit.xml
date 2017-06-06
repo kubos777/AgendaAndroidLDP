@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -8,7 +8,12 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".NewActivity">
+    tools:context=".EditActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,6 +40,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/lastname"
         android:hint="Apellidos"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alias"
+        android:hint="Alias"/>
+
 
     <EditText
         android:layout_width="match_parent"
@@ -53,8 +64,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/phone"
-        android:hint="Teléfono"
+        android:hint="Teléfono casa"
         android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneCel"
+        android:hint="Teléfono celular"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneJob"
+        android:hint="Teléfono trabajo"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fax"
+        android:hint="Fax"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otro"
+        android:hint="Otro"
+        android:inputType="phone"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,5 +115,5 @@
             android:layout_gravity="right"
             android:id="@+id/upd_element" />
     </LinearLayout>
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
